@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <script src="firstjs.js"></script>
+    <style>
+    marquee{
+        color: red;
+        background-color:yellowgreen;
+        margin: 10px 250px;
+        padding: 30px 20px;
+        font-size: 50px;
+        border-radius: 40px;
+        border: 10px solid black;
+
+    }
+    div{
+        background-color: pink;
+        border: 10px solid black;
+        margin: 10px 250px;
+        border-radius: 40px;
+    }
+    form{
+        background-color: goldenrod;
+        border: 5px solid red;
+    }
+    label{
+        font-size: 30px;
+    }
+    input{
+        font-size: 30px;
+        border-radius: 30px;
+    }
+    
+    </style>
+</head>
+<body>
+    <marquee behavior="alternate" direction="right">
+        registration details
+    </marquee>
+    <div>
+        <table align="center">
+    <form  align="center">
+        <tr>
+            <td><label for="">FirstName</label></td>
+            <td><input type="text" name="FirstName" placeholder="Enter your FirstName" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="">LastName</label></td>
+        <td><input type="text" name="LastName" placeholder="Enter your LastName"><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="">Password</label></td>
+        <td><input type="password" name="MyPassword" placeholder="Enter your password"required><br><br> </td>
+    </tr>
+    <tr>
+        <td><label for="">Email</label></td>
+        <td><input type="email" name="MyEmail" placeholder="Enter your Email" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="">Mobile Number:</label></td>
+        <td><input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="123-4567-890" name="MyMobileNumber"> <br><br></td>
+    </tr>
+    <tr>
+        <td><label for="">Salary</label></td>
+        <td><input type="number" name="MySalary" placeholder="Enter your Salary"><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="">Gender:</label></td>
+        <td><input type="radio" name="MyGender" style="padding: 30px;">Male</td><br>
+        <td><input type="radio" name="MyGender" style="padding: 30px;">Female <br><br></td>
+    </tr>
+    <tr>
+        <td><label for="">Hobbies:</label></td><br>
+        <td><input type="checkbox" checked>Reading</td><br>
+        <td><input type="checkbox">Writing</td><br>
+        <td><input type="checkbox" checked>Playing </td><br>
+        <td><input type="checkbox">Dancing <br><br></td><br>
+    </tr>
+        <tr>
+            <td><label for="">DOB</label></td>
+            <td><input type="datetime-local" name="MyDOB"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="">Search</label></td>
+            <td><input type="search" name="MySearch"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="">Month</label></td>
+            <td><input type="month" name="MyMonth"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="">Week</label></td>
+            <td><input type="week" name="MyWeek"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="">Color</label></td>
+            <td><input type="color"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="">Resume</label></td>
+            <td><input type="file" multiple><br><br></td>
+        </tr>
+        <tr>
+            <td><input type="submit" onclick="display()"></td>
+            <td> <input type="reset"></td>
+        </tr>
+    </form>
+</table>
+</div>
+</body>
+</html>
